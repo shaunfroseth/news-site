@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -16,9 +21,35 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
+      .area-1 {
+        grid-area: area-1;
+        display: grid;
+        padding-right: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "sub-area-1 sub-area-1"
+          "sub-area-2 sub-area-3";
+      }
+      .area-2 {
+        background-color: hsl(240, 100%, 5%);
+        grid-area: area-2;
+        border: 2px solid blue;
+        color: hsl(36, 100%, 99%);
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 10px;
+      }
+      .area-3 {
+        grid-area: area-3;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas: "sub-area-4 sub-area-5 sub-area-6";
+        border: 2px solid green;
+        padding-top: 50px;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -26,58 +57,189 @@
 
       .buttons {
         justify-content: right;
-        border: 5px solid black;
-        width: 25%;
+        width: 35%;
         display: flex;
         float: right;
         align-items: center;
         justify-content: space-between;
       }
 
-      .margin {
-        margin: 10%;
+      h1 {
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 3rem;
+        margin: 5px;
       }
+
+      h2 {
+        color: hsl(35, 77%, 62%);
+        font-size: 36px;
+      }
+
+      h3 {
+        color: hsl(36, 100%, 99%);
+      }
+
+      hr {
+        margin-top: 30px;
+        border-color: hsl(236, 13%, 42%);
+      }
+
+      .main-container {
+        border: 2px solid black;
+        display: grid;
+        max-height: 700px;
+        grid-template-columns: 1.1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "area-1 area-1 area-2"
+          "area-1 area-1 area-2"
+          "area-3 area-3 area-3";
+      }
+
+      .main-image {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      .margin {
+        background-color: hsl(36, 100%, 99%);
+        margin: 4% 25%;
+        font-family: "Inter";
+      }
+
       .nav-bar {
         display: flex;
         justify-content: space-between;
-        border: 5px solid black;
+        margin-bottom: 50px;
       }
+
       .nav-button {
-        background: white;
+        background: hsl(36, 100%, 99%);
         border: none;
         cursor: pointer;
         color: hsl(236, 13%, 42%);
       }
+
+      p {
+        color: hsl(236, 13%, 42%);
+        font-size: 0.8rem;
+        margin-top: 0;
+      }
+
+      .read-button {
+        background-color: hsl(5, 85%, 63%);
+        border: none;
+        color: hsl(36, 100%, 99%);
+        cursor: pointer;
+        font-size: 0.7rem;
+        font-weight: 700;
+        font-stretch: 200%;
+        letter-spacing: 0.2rem;
+        margin-top: 10px;
+        width: 50%;
+        height: 40px;
+      }
+      .sub-area-1 {
+        border: 2px solid purple;
+        grid-area: sub-area-1;
+      }
+
+      .sub-area-2 {
+        padding: 10px 40px 10px 0px;
+        border: 2px solid orange;
+        color: hsl(240, 100%, 5%);
+        grid-area: sub-area-2;
+      }
+      .sub-area-3 {
+        grid-area: sub-area-3;
+        border: 2px solid cyan;
+        padding-top: 20px;
+        padding-right: 10px;
+        line-height: 1.5;
+        letter-spacing: 0.009rem;
+      }
+      .sub-area-4 {
+        grid-area: sub-area-4;
+        border: 2px solid gold;
+      }
+      .sub-area-5 {
+        grid-area: sub-area-5;
+        border: 2px solid plum;
+      }
+      .sub-area-6 {
+        grid-area: sub-area-6;
+        border: 2px solid powderblue;
+        padding-left: 20px;
+      }
     </style>
   </head>
   <body class="margin">
-    <div class="nav-bar">
-      <img src="/assets/images/logo.svg" />
-      <div class="buttons">
-        <button class="nav-button">Home</button>
-        <button class="nav-button">New</button>
-        <button class="nav-button">Popular</button>
-        <button class="nav-button">Trending</button>
-        <button class="nav-button">Categories</button>
+    <div class="container">
+      <div class="nav-bar">
+        <img src="/assets/images/logo.svg" />
+        <div class="buttons">
+          <button class="nav-button">Home</button>
+          <button class="nav-button">New</button>
+          <button class="nav-button">Popular</button>
+          <button class="nav-button">Trending</button>
+          <button class="nav-button">Categories</button>
+        </div>
       </div>
-    </div>
 
-    The Bright Future of Web 3.0? We dive into the next evolution of the web
-    that claims to put the power of the platforms back into the hands of the
-    people. But is it really fulfilling its promise? Read more New Hydrogen VS
-    Electric Cars Will hydrogen-fueled cars ever catch up to EVs? The Downsides
-    of AI Artistry What are the possible adverse effects of on-demand AI image
-    generation? Is VC Funding Drying Up? Private funding by VC firms is down 50%
-    YOY. We take a look at what that means. 01 Reviving Retro PCs What happens
-    when old PCs are given modern upgrades? 02 Top 10 Laptops of 2022 Our best
-    picks for various needs and budgets. 03 The Growth of Gaming How the
-    pandemic has sparked fresh opportunities.
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      <div class="main-container">
+        <div class="area-1">
+          <div class="sub-area-1">
+            <img
+              class="main-image"
+              src="/assets/images/image-web-3-desktop.jpg"
+            />
+          </div>
+          <div class="sub-area-2">
+            <h1>The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="sub-area-3">
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button class="read-button">READ MORE</button>
+          </div>
+        </div>
+        <div class="area-2">
+          <h2>New</h2>
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          <hr />
+          <h3>The Downsides of AI Artistry</h3>
+          <p>
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+          <hr />
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+        <div class="area-3">
+          <div class="sub-area-4">
+            01 Reviving Retro PCs What happens when old PCs are given modern
+            upgrades?
+          </div>
+          <div class="sub-area-5">
+            02 Top 10 Laptops of 2022 Our best picks for various needs and
+            budgets.
+          </div>
+          <div class="sub-area-6">
+            03 The Growth of Gaming How the pandemic has sparked fresh
+            opportunities.
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
