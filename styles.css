@@ -1,0 +1,208 @@
+.area-1 {
+  grid-area: area-1;
+  display: grid;
+  padding-right: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "sub-area-1 sub-area-1"
+    "sub-area-2 sub-area-3";
+}
+.area-2 {
+  background-color: hsl(240, 100%, 5%);
+  grid-area: area-2;
+  /* border: 2px solid blue; */
+  color: hsl(36, 100%, 99%);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+}
+.area-3 {
+  grid-area: area-3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "sub-area-4 sub-area-5 sub-area-6";
+  /* border: 2px solid green; */
+  padding-top: 50px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.buttons {
+  width: 35%;
+  display: flex;
+  float: right;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 4%;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 3rem;
+  margin: 5px;
+}
+
+h2 {
+  color: hsl(35, 77%, 62%);
+  font-size: 36px;
+}
+
+h3 {
+  color: hsl(36, 100%, 99%);
+}
+
+h3:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: hsl(236, 13%, 42%);
+}
+
+h5 {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: hsl(240, 100%, 5%);
+}
+
+h5:hover {
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+
+hr {
+  margin-top: 30px;
+  border-color: hsl(236, 13%, 42%);
+}
+
+.main-container {
+  /* border: 2px solid black; */
+  display: grid;
+  height: 800px;
+  grid-template-columns: 1.1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "area-1 area-1 area-2"
+    "area-1 area-1 area-2"
+    "area-3 area-3 area-3";
+}
+
+.main-image {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.margin {
+  background-color: hsl(36, 100%, 99%);
+  font-family: "Inter";
+  margin: 0;
+}
+
+.nav-bar {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.nav-button {
+  background: hsl(36, 100%, 99%);
+  border: none;
+  cursor: pointer;
+  color: hsl(236, 13%, 42%);
+}
+
+.nav-button:hover {
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+
+p {
+  color: hsl(236, 13%, 42%);
+  font-size: 0.8rem;
+  margin-top: 0;
+}
+
+.read-button {
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  color: hsl(36, 100%, 99%);
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-stretch: 200%;
+  letter-spacing: 0.2rem;
+  margin-top: 10px;
+  width: 50%;
+  height: 40px;
+}
+
+.read-button:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+
+.secondary-image {
+  display: inline-block;
+  max-height: 50%;
+  width: auto;
+}
+
+.secondary-image-text {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sub-area-1 {
+  /* border: 2px solid purple; */
+  grid-area: sub-area-1;
+}
+
+.sub-area-2 {
+  padding: 10px 40px 10px 0px;
+  /* border: 2px solid orange; */
+  color: hsl(240, 100%, 5%);
+  grid-area: sub-area-2;
+}
+.sub-area-3 {
+  grid-area: sub-area-3;
+  /* border: 2px solid cyan; */
+  padding-top: 20px;
+  padding-right: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.009rem;
+}
+.sub-area-4 {
+  grid-area: sub-area-4;
+  /* border: 2px solid gold; */
+  display: flex;
+}
+.sub-area-5 {
+  grid-area: sub-area-5;
+  /* border: 2px solid plum; */
+  display: flex;
+}
+.sub-area-6 {
+  grid-area: sub-area-6;
+  /* border: 2px solid powderblue; */
+  padding-left: 20px;
+  display: flex;
+}
